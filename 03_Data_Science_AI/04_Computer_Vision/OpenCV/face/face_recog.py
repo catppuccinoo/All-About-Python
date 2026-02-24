@@ -12,7 +12,7 @@ cap = cv2.VideoCapture(1) # capture frames from a camera; 0 = default webcam
 while 1:
     ret, img = cap.read() #reads frames from cam
     if not ret:  # check if frame is captured
-        print("❌ Failed to grab frame")
+        print("Failed to grab frame")
         continue
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #convert to gray scale/bw; since comps. process black-and-white faster than full color
